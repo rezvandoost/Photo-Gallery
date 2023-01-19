@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آتلیه عکس و فیلم لحظه ها</title>
+  <!-- Bootstrap min CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Bootstrap Reboot CSS -->
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  </style>
+</head>
+<body>
+
+  <!--   Header   -->
+  <div class="header">
+    <!--   Navbar   -->
+    <nav class="navbar navbar-expand-sm fixed-top text-light px-3 bgnav">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo/logo.png" alt="" class="ml-2">
+          <h4 class="d-none d-lg-inline">آتلیه عکس و فیلم لحظه ها</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu">
+          <i class="fas fa-bars text-light"></i>
+        </button>
+        <div id="top-menu" class="collapse navbar-collapse bg-nav-menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link home">خانه</a>
+            </li>
+            <!--  Dropdown Menu >sm -->
+            <li class="nav-item dropdown d-none d-sm-block">
+              <a href="gallery.html" class="nav-link gallery" role="button" data-toggle="dropdown">گالری</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html#special">جلوه های ویژه</a></li>
+                <li><a class="dropdown-item" href="gallery.html#kids">کودک</a></li>
+                <li><a class="dropdown-item" href="gallery.html#bride">عروس</a></li>
+                <li><a class="dropdown-item" href="gallery.html#pregnant">بارداری</a></li>
+                <li><a class="dropdown-item" href="gallery.html#animal">حیوانات</a></li>
+                <li><a class="dropdown-item" href="gallery.html#promotion">تبلیغاتی</a></li>
+                <li><a class="dropdown-item" href="gallery.html#nature">فضای باز</a></li>
+              </ul>
+            </li>
+            <!--  End Dropdown Menu -->
+            <!-- Collapse <sm -->
+            <li class="nav-item d-sm-none">
+              <a href="gallery.html" class="nav-link gallery" role="button" data-toggle="collapse" data-target="#mobile">گالری</a>
+              <ul id="mobile" class="collapse navbar-nav">
+                <li class="nav-item"><a href="gallery.html#special" class="nav-link">جلوه های ویژه</a></li>
+                <li class="nav-item"><a href="gallery.html#kids" class="nav-link">کودک</a></li>
+                <li class="nav-item"><a href="gallery.html#bride" class="nav-link">عروس</a></li>
+                <li class="nav-item"><a href="gallery.html#pregnant" class="nav-link">بارداری</a></li>
+                <li class="nav-item"><a href="gallery.html#animal" class="nav-link">حیوانات</a></li>
+                <li class="nav-item"><a href="gallery.html#promotion" class="nav-link">تبلیغاتی</a></li>
+                <li class="nav-item"><a href="gallery.html#nature" class="nav-link">فضای باز</a></li>
+              </ul>
+            </li>
+            <!--  End Collapse <sm -->
+            <li class="nav-item"><a href="" class="nav-link">مقالات</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">درباره ما</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">تماس با ما</a></li>
+          </ul>
+          <form action="" class="form-inline d-none d-lg-inline">
+            <input class="form-control" type="text" placeholder="جستجو ...">
+            <button class="btn text-warning mr-2"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--   End Navbar   -->
+
+
+    <!--   Carousel   -->
+    <div class="carousel slide" data-ride="carousel" id="home-carousel">
+      <!-- Carousel Indicators  -->
+      <ol class="carousel-indicators d-flex flex-row-reverse">
+        <li  data-target="#home-carousel" data-slide-to="0" class="active"></li>
+        <li  data-target="#home-carousel" data-slide-to="1"></li>
+        <li  data-target="#home-carousel" data-slide-to="2"></li>
+        <li  data-target="#home-carousel" data-slide-to="3"></li>
+        <li  data-target="#home-carousel" data-slide-to="4"></li>
+      </ol>
+      <!--  End Indicators  -->
+
+      <!-- Carousel content -->
+      <div class="carousel-inner"> 
+        <div class="carousel-item active">
+          <img src="images/home carousel/camera.jpg" alt="" class="w-100">
+          <div class="carousel-caption d-none d-md-block col-md-5 col-lg-4">
+            <h1 class="display-4">خوش آمدید</h1>
+            <h5 class="pt-3 pb-2">کار ما فقط عکاسی نیست،</h5>
+            <h5 class="pt-1 pb-2">حس زندگی است.</h5>
+          </div>
+        </div>
+        <div class="carousel-item"> 
+          <img src="images/home carousel/baby.jpg" alt="" class="w-100">
+          <div class="carousel-caption d-none d-md-block col-md-4">
+            <h3>عکاسی کودک</h3>
+            <h5 class="pt-4">ماندگار کردن خاطرات شیرین کودکی</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/home carousel/wedding.jpg" alt="" class="w-100">
+          <div class="carousel-caption d-none d-md-block col-md-4 mr-md-3">
+            <h3>عکاسی عروس</h3>
+            <h5 class="pt-3">ثبت لحظات خاطره انگیز و</h5>
+            <h5 class="pt2">تکرار نشدنی مراسم عروسی</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/home carousel/pregnant.jpg" alt="" class="w-100">
+          <div class="carousel-caption d-none d-md-block col-md-6 col-lg-5">
+            <h3>عکاسی بارداری</h3>
+            <h5 class="pt-3">ثبت لحظات رشد نوزادان در وجود مادران</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/home carousel/animal.jpg" alt="" class="w-100">
+          <div class="carousel-caption d-none d-md-block col-md-4">
+            <h3>عکاسی حیوانات</h3>
+            <h5 class="pt-3 d-none d-lg-block">حیوانات هم عاشق عکاسی هستند</h5>
+          </div>
+        </div>
+      </div>
+      <!-- End Content  -->
+
+      <!-- Carousel Buttons -->
+      <a class="carousel-control-prev" type="button" data-target="#home-carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon d-none d-sm-inline"></span>
+      </a>
+      <a class="carousel-control-next" type="button" data-target="#home-carousel" data-slide="next">
+        <span class="carousel-control-next-icon d-none d-sm-inline"></span>
+      </a> 
+      <!--  End Buttons -->
+    </div>
+    <!--   End Carousel   -->
+  </div>
+  <!--   End Header   -->
+  
+
+  <!--    main    -->
+  <a name="about"></a>
+    <!--  About us  -->
+    <div class="container-fluid">
+      <div class="row py-5 about">
+        <div class="col-md-5 col-12 p-3 mx-auto my-auto">
+          <img src="images/black woman/about.jpg" alt="" >
+          <img src="images/black woman/watermelon.jpg" alt="" class="mt-5 d-none d-md-block d-lg-none">
+        </div>
+        <div class="col-md-5 col-12 p-3 mx-auto my-auto">
+          <h1 class="mt-5 mt-md-2">درباره ما</h1>
+          <p class="text-center pt-5">آتلیه عکاسی و فیلمبرداری لحظه ها ، ارائه دهنده خدمات عکاسی عروس ، عکاسی بارداری و عکاسی کودک می باشد . این آتلیه با بکارگیری نیروهای متخصص و مجرب کوشیده است ثبتی زیبا و به یاد ماندنی از خاطرات و رویدادهای شیرین زندگی مشتریان خود را به انجام رساند . در عکاسی کودک و نوزاد ، رخدادهایی همچون تولد ، جشن دندانی و ... موقعیت مناسبی جهت حضور در آتلیه می باشد  . آتلیه کودک لحظه ها ، با تم ها و لباس های مناسبتی خود پذیرای نوزادان و کودکان ۴۰ روزه به بالا می باشد . این آتلیه کوشیده است تا با ایجاد محیطی ایمن و آرام فرآیند عکاسی کودک را به بهترین نحو به انجام رساند.</p>
+        </div>
+      </div>
+    </div>
+    <!--  End About us-->
+
+    <!--   Services -->
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="service w-100 text-center text-light py-3">خدمات ما</h2>
+        <div class="para">
+          <div class="parallax text-light d-lg-flex">
+            <div class="col-12 col-lg-6 p-5">
+              <h3>امکانات</h3>
+              <p>هر آتلیه عکاسی ای با توجه به نوع عکس، در سبک‌های متفاوت دکورچینی می‌شود. بنابراین سبک مورد علاقه  خود را با مشاهده نمونه کارهای آتلیه انتخاب کنید. شما باید به هزینه های سبک انتخابی، تعداد عکس‌ها، نوع جنس کاغذ‌های عکس (مات و براق) و یا نوع نصب آنها بر شاسی و یا بوم توجه کنید. در ادامه امکانات بیشتری مثل تعداد برگ‌های آلبوم  عکس‌ها، نوع فضا، تعداد دوربین‌ها، زوایای مختلف عکاسیو فیلمبرداری و ... را هم مدنظر داشته باشید.</p>
+            </div>
+            <div class="col-12 col-lg-6 p-5">
+              <h3>سبک ها</h3>
+              <p>سلیقه ها در انتخاب سبک طراحی، ژستها و دکورهامتفاوت است. مثلا بعضیها دکور با فضایی تجملاتی را برای بکگراند عکس ها می‌پسندند و برخی افراد دکورچینی مدرن و ساده را دوست دارند، که همه اینها را باید از قبل با آتیله خود هماهنگ کنید تا مطابق انتظارات شما عمل کنند. اغلب عروس و دامادها ایده‌ای برای گزینش این قبیل موارد ندارند، پس بهتر است کار را به دست کاردان و عکاسان حرفه ای آتلیه خود بسپارند. عکاسان با تجربه بهتر می‌توانند شما را در انتخاب گزینه های مناسب راهنمایی‌کنند.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="service w-100 text-center text-light py-2" data-toggle="collapse" data-target=".list-service" type="button">
+      <h5>برای مشاهده خدمات کلیلک کنید ...</h5>
+    </a>
+    
+    <!-------------   Tab Pane   --------------->
+    <div class="container-fluid">
+      <div class="row py-5 collapse list-service">
+        <div class=" col-md-10 col-12 d-flex d-md-block pane mx-auto">
+          <!-- Nav Tab -->
+          <ul class="nav nav-tabs flex-column flex-md-row col-2 col-md-12 justify-content-between" id="myTab">
+            <li class="nav-item">
+              <button class="nav-link d-flex" id="home-tab" data-toggle="tab" data-target="#baby" type="button">
+                <img src="images/icons/baby-feet.png"/>
+                <span>آتلیه کودک</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#wedding" type="button">
+                <img src="images/icons/wedding-rings.png"/>
+                <span>آتلیه عروس</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#film" type="button">
+                <img src="images/icons/camcorder-pro.png"/>
+                <span>فیلمبرداری مجالس</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#pregnant" type="button">
+                <img src="images/icons/pregnant.png"/>
+                <span>آتلیه بارداری</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#animal" type="button">
+                <img src="images/icons/cat.png"/>
+                <span>عکاسی حیوانات</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#promotion" type="button">
+                <img src="images/icons/commercial.png"/>
+                <span>عکاسی تبلیغاتی</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#nature" type="button">
+                <img src="images/icons/national-park.png"/>
+                <span>عکاسی فضای باز</span>
+              </button>
+            </li>
+          </ul>
+          <!-- End Nav Tab -->
+
+          <!-- Tab Content -->
+          <div class="col-md-12 col-10 mt-2">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active px-5 mx-auto" id="baby">
+                <div>
+                  <h3>آتلیه کودک</h3>
+                  <div class="row">
+                    <img class="w-100 col-12 col-lg-6 mb-3 my-lg-auto" src="images/baby/tab-baby.jpg" alt="">
+                    <p class="col-12 col-lg-6 my-auto">كودكان محبوب ترین سوژه عكاسی در تمام دنیا هستند. کودکان جذاب هستند و عکاسی کودک سوژه فوق العاده ای برای عکاسی است
+
+                      اما عكاس هنگام عكاسی از كودک باید تجربه کافی و ارتباط موئثر با کودکان داشته باشد تا کودک یا نوزاد احساس راحتی كند.
+                      
+                      و همچنین برای عكاسی از كودک و نوزاد عکاس باید صبور باشد و محیط آرامی در آتلیه کودک فراهم کند.
+                      
+                      زیبایی کودکان وصف ناپذیر است و اگر لحظه ای از آن غافل شویم زمان, اجازه برگشت به دنیای کودکی را نمی دهد.
+                      
+                      پس برای ثبت زیباترین لحظات کودکان وقت بگذارید.</p> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-5 mx-auto" id="wedding">
+                <div>
+                  <h3>آتلیه عروس</h3>
+                  <div class="row">
+                    <img class="w-100 col-12 col-lg-6 mb-3 my-lg-auto" src="images/wedding/tab-wedding.jpg" alt="">
+                    <p class="col-12 col-lg-6 my-auto">ماندگارترین خاطره از عروسی، فیلم و عکس عروسی میباشد. به همین دلیل ما با داشتن آتلیه اختصاصی عروس به دنبال ارایه کاری زیبا ، با کیفیت و ماندگار به مشتریان گرامی می باشیم. 
+                      <br>
+                      آتلیه تخصصی عروس لحظه ها با بهره گیری ازمتخصصان و طراحان خانم و آقا و استفاده از بروزترین تجهیزات  و عکاسان ماهر بهترین لحظات شما را ثبت میکند. همچنین در نهایت امانتداری امنیت و اطمینان به خانواده های مذهبی ایران عزیزمان دارای کادر خانم و باغ اختصاصی زیبا برای شما عروس خانم ها میباشد.</p> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-5 mx-auto" id="film">
+                <div>
+                  <h3> فیلمبرداری مجالس</h3>
+                  <div class="row">
+                    <img class="w-100 col-12 col-lg-6 mb-3 my-lg-auto" src="images/camera/tab-film.jpg" alt="">
+                    <p class="col-12 col-lg-6 my-auto">تشریفات مجالس لحظه ها با در اختیار داشتن آتلیه و لابراتوار اختصاصی و عمارتهای لوکس و رویایی ، با بهره گیری از بهترین متخصیص دوره دیده و با استفاده از جدیدترین دوربینها و تجهيزات مورد نیاز (هلی شات ، کرین و ... ) و همچنین با بکار گیری جدیدترین تجهيزات تدوين فیلم و عکس محیطی امن و خانوادگی جهت ثبت و ضبط خاطرات شیرین شما عزیزان را فراهم آورده است 
+                    </p> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-5 mx-auto" id="pregnant">
+                <div>
+                  <h3>آتلیه بارداری</h3>
+                  <div class="row">
+                    <img class="w-100 col-12 col-lg-6 mb-3 my-lg-auto" src="images/pregnant/tab-pregnant.jpg" alt="">
+                    <p class="col-12 col-lg-6 my-auto">آتلیه بارداری  لحظه ها با کادر مجرب خانم در نهایت دقت ، حوصله و امانتداری مدیریت می شود.
+                      <br>
+                      همچنین آتلیه لحظه ها جهت راحتی حال مادران باردار دارای پارکینگ اختصاصی میباشد
+                      در نظر داشته باشید بهترین زمان برای عکاسی در ماه هشتم بارداری می باشد که مادر توان کافی را داشته و فرم بارداری در مناسبترین حالت برای ژست عکسبارداری می باشد.
+                      میتوانید جهت رویت نمونه عکسهای بارداری با قرار قبلی به  آتلیه نورا مراجعه نمایید.</p> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-5 mx-auto" id="animal">
+                <div>
+                  <h3>عکاسی حیوانات</h3>
+                  <div class="row">
+                    <img class="w-100 col-12 col-lg-6 mb-3 my-lg-auto" src="images/animal/tab-animal.jpg" alt="">
+                    <p class="col-12 col-lg-6 my-auto">حیوانات مستحق عکس گرفتنند
+
+                      اما گاهی اوقات عکاسی از آن ها سخت ترین کار ممکن است .
+                      
+                      چیزی که در عکاسی از حیوانات نیاز دارید شکیبایی است. 
+                      آتلیه لحظه ها بهترین و شیک ترین آتلیه عکس حیوانات خانگی در تهران
+                      برای تمامی حیوانات خانگی کوچک و بزرگ. محیطی آرام و مناسب برای عکاسی و بازی و حرکت حیوانات شما فراهم کرده ایم. مجهز به دکور های مناسب برای حیوانات.</p> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-5 mx-auto" id="promotion">
+                <div>
+                  <h3>عکاسی تبلیغاتی</h3>
+                  <div class="row">
+                    <img class="w-100 col-12 col-lg-6 mb-3 my-lg-auto" src="images/promotion/tab-promotion.jpg" alt="">
+                    <p class="col-12 col-lg-6 my-auto">اگر شما کارخانه ، مجتمع  پتروشیمی هستید و یا پروژه های بزرگ صنعتی در پیش دارید در واقع هیچ چیز به صرفه تر از  طراحی کاتالوگ و عکاسی صنعتی و تجاری برای شما نیست و در کل جهان از این روش استفاده میکنند ، این دو در واقع خط تولید شما را به وضوح معرفی میکند ، متخصصین شما را معرفی میکند و چه چیزی مهمتر از این برای شما ؟</p> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-5 mx-auto" id="nature">
+                <div>
+                  <h3>عکاسی فضای باز</h3>
+                  <div class="row">
+                    <img class="w-100 col-12 col-lg-6 mb-3 my-lg-auto" src="images/nature/tab-nature2.JPG" alt="">
+                    <p class="col-12 col-lg-6 my-auto"> هنرمندان عکاس برای بروز خلاقیت و گریز از ابزارهای گوناگون و دست و پا گیر عکاسی در آتلیه و استودیو های عکاسی، به ثبت عکس در فضای بیرونی روی آورده اند.
+                      عکاسی در باغ و یا فضای باز یکی از مدرن ترین سبک های عکاسیه
+
+                      تلاشمون بوده که با انتخاب لوکیشن های طبیعی زیبا، تیم حرفه ای عکاسی فضای باز  و ادیت جذاب عکسها
+                      
+                      عکسهایی بگیرید که تا به حال نگرفتید و به داشتنشون افتخار کنید.
+                    </p> 
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+          <!-- End Tab Content -->
+      </div>
+          <!-- End Tab Content -->
+    </div>
+    <!-------------- End Tab Pane ------------->
+    <!--  End Services  -->
+
+  <!--    End Main   -->
+  <a name="contact"></a>
+  <!--  Footer  -->
+  <div class="container-fluid">
+    <div class="row  text-light p-4 footer">
+      <div class="col-12 col-md-5 col-lg-3 mx-auto my-4 text-center">
+        <h4><i class="fas fa-map-marker-alt"></i>
+        آدرس:</h4>
+        <p class="mt-4">تهران، پاسداران،</p>
+        <p>بین پایدارفرد و اسلامی،</p>
+        <p> گلستان8، پلاک 1111</p>
+        <span>آتلیه و عکاسی لحظه ها</span>
+      </div>
+      <div class="col-12 col-md-5 col-lg-3 mx-auto my-4 text-center">
+        <h4><i class="fas fa-phone"></i>
+        تلفن تماس:</h4>
+        <p class="mt-4">021-22446688</p>
+        <p> شنبه تا چهارشنبه</p>
+        <p>8:00 صبح تا 8:00 شب</p>
+      </div>
+      <div class="col-12 col-md-10 col-lg-3 mx-auto my-4 text-center">
+        <h4>شبکه های اجتماعی </h4>
+        <div class="mt-4 social">
+          <a href="#" class="text-light px-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light px-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light px-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light px-3"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  End Footter -->
+
+  <!-- Script Source Files -->
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- Popper JS-->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="js/all.min.js"></script>
+  
+  <!-- Change Background Scroll -->
+  <script>
+    /*  scroll change style */
+    $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 100); 
+      $('#top-menu').toggleClass('scrolled', $(this).scrollTop() > 100);    
+      $(window).scroll(function(){
+        $('#top-menu').hide();
+      });
+      $('nav').click(function(){
+        $('#top-menu').show();
+      })
+    });
+
+    /*  End change style  */
+    /* open gallery page */ 
+    $('.gallery').hover(function(){
+      $('#mobile').slideDown();
+    })  
+    $('#mobile').mouseleave(function(){
+        $(this).slideUp();
+    });
+
+    $('.gallery').click(function(){
+      open('gallery.html');
+    })
+    /* End gallery page */
+  </script>
+
+  <!-- End Script Source Files -->
+</body>
+</html>
