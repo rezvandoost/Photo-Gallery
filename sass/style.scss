@@ -1,0 +1,378 @@
+/*=============   Fonts Definition   ===============*/
+@font-face {
+  font-family:Avini;
+  src:url('../fonts/aviny.ttf') format('truetype');
+}
+@font-face {
+  font-family:Iransans;
+  src: url('../fonts/Iranian\ Sans.ttf') format('truetype');
+}
+@font-face {
+  font-family:Nazanin;
+  src: url('../fonts/Far_Nazanin.ttf') format('truetype');
+}
+/*=================    Variable   ===============*/
+$bg-nav:rgba(0, 0, 0, 0.4);
+/*================    Media( Query   ==============*/
+@media (max-width:576px){
+  .bg-nav-menu {
+    background-color:rgba(0, 0, 0, 0.2);
+  }
+  #top-menu {
+    margin-top:-0.4rem;
+    height: fit-content;
+    padding:0px 30px 30px !important;
+      .nav-link {
+        height:45px;
+        &::after {        
+          width: 20% !important;         
+          bottom: -0.5em !important;     
+        }     
+      }
+      .dropdown-menu {
+        display:none;
+      }  
+  }
+
+  .navbar-toggler, .navbar-brand {
+    margin-top:-0.8rem;
+  }
+  /*======== tab pane ==============*/
+  #myTabContent {
+    p {
+      font-size: 13px!important;
+      text-align: center;
+      padding-right:0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media (min-width:577px){
+  .bg-nav-menu {
+    background-color:rgba(0, 0, 0, 0);
+    height:4rem;
+  }
+  .dropdown:hover>.dropdown-menu {
+    display:block;
+  }
+}
+
+@media (min-width:576px) and (max-width:620px){
+  .navbar {
+    .nav-link {
+      font-size: 1.3rem;
+    }
+  }
+   /*======== tab pane ==============*/
+   #myTabContent {
+    p {
+      font-size: 14px; 
+    }
+  }
+}
+
+/*================   Body Reset   ==============*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  direction: rtl;
+  text-align: right;
+}
+
+/*=============== Header =============*/
+  
+  /*=============  Navbar ============*/
+  .bgnav {
+    background-color:rgba(0, 0, 0, 0.2);
+  }
+  .bgnav.scrolled {
+    transition: 0.5s ease;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid orange;
+  }
+  
+  .bg-nav-menu.scrolled {
+    transition: 0.5s ease;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid orange;
+  }
+
+  .navbar {
+    height: 4rem;
+    line-height: 4rem;
+    font-family: Avini;
+    font-size: 1.5rem;
+    .navbar-brand{
+      color:#fff;
+      img {
+        width:4rem;
+      }
+    } 
+    #top-menu .nav-item {
+      padding-left:20px;
+      position: relative;
+      .nav-link {
+        color:#fff;
+        text-shadow:1px 1px 3px orange;
+        position: relative;
+        &::after {
+          content: ' ';       
+          display: block;    
+          width: 100%;       
+          height: .05em;      
+          position: absolute; 
+          bottom: 0.7em;     
+          left: 0;           
+          right: 0px;           
+          background: #fff;  
+          transform: scaleX(0);
+          transition: transform .2s ease;
+        }
+        &:hover::after {
+          transform: scaleX(1);
+        }
+      }
+      .home {
+        &::after {
+          transform: scaleX(1);
+        }  
+      }
+      /* Dropdown > sm  */
+      .dropdown-menu {
+        background-color:$bg-nav;
+        min-width:fit-content;
+        min-height: fit-content;
+        font-size: 1.5rem;
+        text-align: center;
+        position: absolute;
+        top:4.3rem;
+        left:-50%;
+        li {
+          padding-left:0;
+          a {
+            color:#fff;
+            text-shadow:1px 1px 3px orange;
+            line-height:1.5rem;
+            &:hover {
+              background-color: $bg-nav;
+            }
+          }
+        }
+      }
+      /* End Dropdown > sm  */
+       /* Collapse < sm */
+       #mobile {
+        padding-right: 30px;
+        padding-top: 20px;
+        .nav-item {
+          line-height: 2rem;
+          .nav-link {
+            font-size: 1.3rem;
+            height:2rem;
+            &::after {                
+              bottom: -0.6em !important;     
+             }  
+          }
+        }
+      }
+      /* End Collapse < sm  */
+    }
+  }
+  .navbar-toggler {
+    border:1px solid white;
+  }
+  /*============  End Navbar  ===========*/
+  /*============  Carousel  ============*/
+  .carousel {
+    height:100vh;
+    .carousel-indicators li {
+      width:10px;
+      height:10px;
+      border-radius:50%;
+    }
+    img {
+      height:100vh;
+      object-fit: cover;
+      object-position: top;
+    }
+    .carousel-item {
+      position: relative;
+      .carousel-caption {
+        min-height: fit-content;
+        background:$bg-nav;
+        border-radius: 20px;
+        position: absolute;
+        h3 {
+          font-family:Nazanin;
+          font-size: 2.8rem;
+          font-weight: 650;
+          text-shadow:1px 1px 3px rgb(37, 32, 23);
+        }
+        h5 {
+          font-family: Nazanin;
+          font-size: 1.7rem;
+        }
+      } 
+      &:first-child .carousel-caption {
+        margin-right: auto;
+        top:55vh;
+        left:10vw;
+        h1 {
+          font-family: Avini;
+          text-shadow:1px 1px 3px orange;
+        }
+        h5 {
+          font-size: 2rem;
+          text-shadow:1px 1px 3px rgb(27, 24, 17);
+        }
+      }
+      &:nth-child(2) .carousel-caption {
+        margin-right: auto;
+        top:70vh;
+        left:10vw;
+      }
+      &:nth-child(3) .carousel-caption {
+        margin-left: auto;
+        bottom:15vh;
+        right:5vw;
+      }
+      &:nth-child(4) .carousel-caption {
+        margin-left: auto;
+        top:70vh;
+        right:10vw;
+      }
+      &:last-child .carousel-caption {
+        margin-right: auto;
+        top:16vh;
+      }
+    }
+  }
+/*============== End Carousel  =============*/
+/*=============  End Header  ===============*/
+
+/*=====================   Main  ======================*/
+/*================   About   ==============*/
+.about {
+  background-color: #000;
+  border-top:4px solid orange;
+  img {
+    border-radius: 20px;
+    border:2px solid gold;
+    width:100%;
+  }
+  h1, p {
+    color:#fff;
+    font-family: Iransans;
+  }
+  p{
+    line-height: 2.5rem;
+  }
+}
+/*===============  End About ===========*/
+/*=============  Services  ===============*/
+.service {
+  background-image: linear-gradient(to right,orange, yellow, rgb(4, 194, 4));
+  text-shadow: 2px 2px 3px grey;
+  h5 {
+    text-shadow: 2px 2px 3px grey;
+    &:hover {
+      color:#fff;
+    }
+  }
+}
+/*============= Parallax  ============*/
+.para {
+  max-width:100vw;
+  margin: -10px auto;
+  padding:0px;
+}
+.parallax {
+  background:url('../images/camera/para.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height:fit-content;
+  p {
+    font-family:Iransans;
+    line-height: 2rem;
+    padding-top:30px;
+  }
+}
+/*===========  Tab Pane ============*/
+.list-service {
+  border-bottom: 4px solid orange;
+    .nav-item {
+      max-width: fit-content;
+      .nav-link {
+        margin-bottom: 1px;
+        border-radius: 20px;
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          border-bottom: 1px solid rgb(216, 215, 215);
+          img {
+            transition: 1s ease;
+            transform: scale(1.15);
+          }
+        }
+        &:focus {
+          border-bottom: 1px solid rgb(216, 215, 215);
+        }
+        span {
+          font-size:0.9rem;
+          font-weight: bold;
+          font-family:Iransans;
+        }
+      }
+    }
+}
+#myTabContent {
+  h3 {
+    font-family: Iransans;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  img {
+    border-radius: 20px;
+    box-shadow: -3px 3px 5px gray;
+    padding:0;
+    height: fit-content;
+  }
+  p {
+    font-size:16px;
+    padding-right:20px;
+    font-family: Iransans;
+    line-height:2rem;
+    padding-right:30px;
+    padding-left: 30px;
+  }
+}
+/*========== End Services  ==============*/
+/*=================== End Main  ================*/
+/*===================== Footer  ==================*/
+.footer {
+  background: rgb(24, 22, 22);
+  font-family:Iransans;
+  font-size:0.9rem;
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+  } a {
+    font-size: 1.5rem;
+    &:hover {
+      transition:transform 1s ease;
+      transform: scale(1.2);
+      color:#e2c583 !important;
+    }
+  }
+}
+/*==================  End Footer  ================*/
